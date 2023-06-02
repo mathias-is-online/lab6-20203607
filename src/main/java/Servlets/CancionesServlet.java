@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
-@WebServlet(name = "TourServlet",urlPatterns = {"/listaTours"})
-public class TourServlet extends HttpServlet {
+@WebServlet(name = "CancionesServlet",urlPatterns = {"/listaCanciones"})
+public class CancionesServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
