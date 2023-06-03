@@ -10,7 +10,7 @@
 <jsp:useBean type="java.util.ArrayList<Beans.Cancion>" scope="request" id="listaRecomendados"/>
 
 
-html>
+<html>
 <jsp:include page="/static/head.jsp">
     <jsp:param name="title" value="Lista de Recomendados"/>
 </jsp:include>
@@ -30,6 +30,7 @@ html>
             <th>ID</th>
             <th>CANCION</th>
             <th>BANDA</th>
+            <th>Ver</th>
             </thead>
             <%
                 for (Cancion cancion : listaRecomendados) {
@@ -40,6 +41,8 @@ html>
                 <td><%=cancion.getNombre_cancion()%>
                 </td>
                 <td><%=cancion.getBanda()%>
+                </td>
+                <td><a class="btn btn-success" href="<%=request.getContextPath()%>/listaCanciones?a=banda&idbanda=<%=cancion.getBanda()%>">Más de la banda</a>
                 </td>
 
             </tr>

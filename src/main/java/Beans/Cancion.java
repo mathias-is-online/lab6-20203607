@@ -5,7 +5,24 @@ public class Cancion {
     private int idcancion;
     private String nombre_cancion;
     private String banda;
+    private int favorito;
+    private String lista;
 
+    public String getLista() {
+        return lista;
+    }
+
+    public void setLista(String lista) {
+        this.lista = lista;
+    }
+
+    public int getFavorito() {
+        return favorito;
+    }
+
+    public void setFavorito(int favorito) {
+        this.favorito = favorito;
+    }
 
     public int getIdcancion() {
         return idcancion;
