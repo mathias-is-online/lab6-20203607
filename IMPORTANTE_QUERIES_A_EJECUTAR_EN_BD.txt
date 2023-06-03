@@ -1,0 +1,29 @@
+Estos queries se deben ejecutar en el my sql workbench para que se peuda acceder a las funcionalidades de la pagina
+
+
+
+
+ALTER TABLE cancion ADD COLUMN favorito INT NOT NULL DEFAULT 0;
+
+ALTER TABLE cancion
+ADD COLUMN lista TEXT DEFAULT NULL;
+
+UPDATE cancion
+SET lista = 'INDIE'
+WHERE idcancion = 17
+
+UPDATE cancion
+SET lista = 'INDIE'
+WHERE idcancion = 22
+
+UPDATE cancion
+SET lista = 'NEW WAVE'
+WHERE idcancion = 8
+
+UPDATE cancion
+SET lista = 'NEW WAVE'
+WHERE idcancion = 14
+
+UPDATE cancion
+SET lista = 'hiphopera'
+WHERE idcancion = 20
